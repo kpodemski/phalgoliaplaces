@@ -30,7 +30,6 @@
 .jscsrc
 .editorconfig
 index.php.copy
-gulpfile.js
 
 ## Plugin-specific files:
 
