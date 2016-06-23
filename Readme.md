@@ -1,18 +1,25 @@
 # PrestaHome - Algolia Places for PrestaShop
 
-Changelog
+## Changelog
 ----------------------------------------------------------------
 
-Version 0.1.0 - Date: June 23, 2016
+### Version 0.1.0 - Date: June 23, 2016
 --
-  New:
-  	* First release
+* First release
+
+## To Do:
+
+* Support for counties/states
+* Error reporting if needed (?)
+* spec/tests
+* Auto-updater from @firstred
 
 
-Support
+
+## Support
 ----------------------------------------------------------------
 n/a
 
-License
+## License
 ----------------------------------------------------------------
 MIT
