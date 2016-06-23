@@ -1,0 +1,11 @@
+.algolia-places {
+    background: #f0f0f0;
+    padding: 15px;
+    width: 30%;
+    display: block !important;
+}
+
+.algolia-places > .algolia-places {
+    width: 100%;
+    padding: 0;
+}
