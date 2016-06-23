@@ -1,5 +1,8 @@
 module.exports = function(grunt) {
-    var moduleName = 'phalgoliaplaces';
+    var package = require('./package.json'),
+        options = package.options,
+        moduleName = options.moduleName;
+
     grunt.initConfig({
         compress: {
             main: {
