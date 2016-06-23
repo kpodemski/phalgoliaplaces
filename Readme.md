@@ -8,10 +8,13 @@ What is all about?
 
 1. Clone repo
 2. Run `npm install`
-3. Run `gulp build` or just `gulp` to build module package
-4. Install module
+3. Run `grunt` to build module package
+4. Install module from .zip
 
 ## Changelog
+
+#### Version 0.2.0 - Date: June 23, 2016
+* Replace Gulp with Grunt for package creation
 
 #### Version 0.1.0 - Date: June 23, 2016
 

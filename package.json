@@ -1,7 +1,8 @@
 {
   "name": "phalgoliaplaces",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
+  "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,20 +14,9 @@
   "license": "MIT",
   "homepage": "https://github.com/kpodemski/phalgoliaplaces#readme",
   "devDependencies": {
-    "del": "^2.2.0",
-    "fs-extra": "^0.30.0",
-    "glob-all": "^3.0.1",
-    "gulp": "^3.9.0",
-    "gulp-sass": "^2.3.1",
-    "gulp-sourcemaps": "^1.6.0",
-    "node-bourbon": "^4.2.8",
-    "gulp-jscs": "^3.0.2",
-    "gulp-zip": "^3.0.2",
-    "mkdirp": "^0.5.1",
-    "run-sequence": "^1.1.5",
-    "gulp-notify": "^2.2.0",
-    "gulp-if": "^2.0.1",
-    "gulp-rename": "^1.2.2"
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-compress": "^0.14.0"
   },
   "options": {
     "moduleName": "phalgoliaplaces"
