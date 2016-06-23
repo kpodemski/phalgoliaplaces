@@ -45,7 +45,7 @@ class PhAlgoliaPlaces extends Module
     {
         $this->name = 'phalgoliaplaces';
         $this->tab = 'front_office_features';
-        $this->version = '0.1.0';
+        $this->version = '0.1.1';
         $this->author = 'PrestaHome';
         $this->need_instance = 0;
         $this->is_configurable = 0;
@@ -342,7 +342,6 @@ class PhAlgoliaPlaces extends Module
         $pages = array('authentication', 'address', 'order-opc');
 
         if (isset($this->context->controller->php_self) && in_array($this->context->controller->php_self, $pages)) {
-            echo 'zaladowano';
             Media::addJsDef(
                 array(
                     //$this->name.'_appId' => Configuration::get($this->options_prefix.'appid'),

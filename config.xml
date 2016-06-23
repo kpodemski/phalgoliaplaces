@@ -2,7 +2,7 @@
 <module>
 	<name>phalgoliaplaces</name>
 	<displayName><![CDATA[Integration with Algolia Places]]></displayName>
-	<version><![CDATA[0.1.0]]></version>
+	<version><![CDATA[0.1.1]]></version>
 	<description><![CDATA[Algolia Places provides a fast, distributed and easy way to use address search autocomplete JavaScript library on your website. ]]></description>
 	<author><![CDATA[PrestaHome]]></author>
 	<tab><![CDATA[front_office_features]]></tab>
