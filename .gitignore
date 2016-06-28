@@ -92,3 +92,4 @@ jspm_packages
 .node_repl_history
 
 *phalgoliaplaces.zip
+/config.xml

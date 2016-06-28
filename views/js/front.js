@@ -10,7 +10,8 @@ $(document).ajaxComplete(function() {
 
 function runAlgoliaPlaces() {
   if ($('#address1').length > 0 && algoliaIsRunning == false) {
-    var placesAutocomplete = places({
+   
+    var algoliaPlacesOptions = {
       container: $('input#address1').get(0),
       language: phalgoliaplaces_isoLang,
       type: 'address',
@@ -20,7 +21,14 @@ function runAlgoliaPlaces() {
           return suggestion.name;
         }
       },
-    });
+    };
+    
+    if (phalgoliaplaces_appId && phalgoliaplaces_apiKey) {
+      algoliaPlacesOptions['appId'] = phalgoliaplaces_appId;
+      algoliaPlacesOptions['apiKey'] = phalgoliaplaces_apiKey;
+    }
+
+    var placesAutocomplete = places(algoliaPlacesOptions);
 
     placesAutocomplete.on('change', function resultSelected(e) {
       $('#city').val(e.suggestion.city);

@@ -45,7 +45,7 @@ class PhAlgoliaPlaces extends Module
     {
         $this->name = 'phalgoliaplaces';
         $this->tab = 'front_office_features';
-        $this->version = '0.2.0';
+        $this->version = '0.3.0';
         $this->author = 'PrestaHome';
         $this->need_instance = 0;
         $this->is_configurable = 0;
@@ -123,36 +123,36 @@ class PhAlgoliaPlaces extends Module
         return true;
     }
 
-    // public function getContent()
-    // {
-    //     $this->context->controller->addjQueryPlugin(array(
-    //         'fancybox'
-    //     ));
+    public function getContent()
+    {
+        $this->context->controller->addjQueryPlugin(array(
+            'fancybox'
+        ));
 
-    //     if (file_exists(_PS_MODULE_DIR_.$this->name.'/views/js/admin.js')) {
-    //         $this->context->controller->addJS(array(
-    //             _MODULE_DIR_.$this->name.'/views/js/admin.js',
-    //         ));
-    //     }
+        if (file_exists(_PS_MODULE_DIR_.$this->name.'/views/js/admin.js')) {
+            $this->context->controller->addJS(array(
+                _MODULE_DIR_.$this->name.'/views/js/admin.js',
+            ));
+        }
 
-    //     if (file_exists(_PS_MODULE_DIR_.$this->name.'/views/css/admin.css')) {
-    //         $this->context->controller->addCSS(array(
-    //             _MODULE_DIR_.$this->name.'/views/css/admin.css',
-    //         ));
-    //     }
+        if (file_exists(_PS_MODULE_DIR_.$this->name.'/views/css/admin.css')) {
+            $this->context->controller->addCSS(array(
+                _MODULE_DIR_.$this->name.'/views/css/admin.css',
+            ));
+        }
 
-    //     $this->_html = '<h2>'.$this->displayName.'</h2>';
+        $this->_html = '<h2>'.$this->displayName.'</h2>';
 
-    //     if (Tools::isSubmit('save'.$this->name)) {
-    //         $this->renderConfigurationForm();
-    //         $this->batchUpdateConfigs();
+        if (Tools::isSubmit('save'.$this->name)) {
+            $this->renderConfigurationForm();
+            $this->batchUpdateConfigs();
 
-    //         $this->_clearCache('*');
-    //         $this->_html .= $this->displayConfirmation($this->l('Settings updated successfully.'));
+            $this->_clearCache('*');
+            $this->_html .= $this->displayConfirmation($this->l('Settings updated successfully.'));
 
-    //     }
-    //     return $this->_html . $this->renderForm();
-    // }
+        }
+        return $this->_html . $this->renderForm();
+    }
 
     protected function renderForm()
     {
@@ -344,8 +344,8 @@ class PhAlgoliaPlaces extends Module
         if (isset($this->context->controller->php_self) && in_array($this->context->controller->php_self, $pages)) {
             Media::addJsDef(
                 array(
-                    //$this->name.'_appId' => Configuration::get($this->options_prefix.'appid'),
-                    //$this->name.'_apiKey' => Configuration::get($this->options_prefix.'appkey'),
+                    $this->name.'_appId' => Configuration::get($this->options_prefix.'appid'),
+                    $this->name.'_apiKey' => Configuration::get($this->options_prefix.'appkey'),
                     $this->name.'_isoLang' => $this->context->language->iso_code,
                 )
             );
@@ -355,6 +355,7 @@ class PhAlgoliaPlaces extends Module
             ));
 
             $this->context->controller->addJS(array(
+                'https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js',
                 'https://cdn.jsdelivr.net/places.js/1/places.min.js',
                 _PS_MODULE_DIR_.$this->name.'/views/js/front.js',
             ));
