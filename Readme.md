@@ -22,12 +22,12 @@ What is all about?
 
 ## To Do:
 
-* Support for counties/states
-* Error reporting if needed (?)
-* spec/tests
-* Auto-updater from @firstred
-* Support for Algolia premium users
-* Option for `useDeviceLocation`
+- [ ] Support for counties/states
+- [ ] Error reporting if needed (?)
+- [ ] spec/tests
+- [ ] Auto-updater from @firstred
+- [x] Support for Algolia premium users
+- [ ] Option for `useDeviceLocation`
 
 ## Support
 
