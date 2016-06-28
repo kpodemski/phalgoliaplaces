@@ -13,6 +13,9 @@ What is all about?
 
 ## Changelog
 
+#### Version 0.3.0 - Date: June 27, 2016
+* Add options to set appID & apiKey for registered/premium Algolia users
+
 #### Version 0.2.0 - Date: June 23, 2016
 * Replace Gulp with Grunt for package creation
 
