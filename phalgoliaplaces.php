@@ -45,7 +45,7 @@ class PhAlgoliaPlaces extends Module
     {
         $this->name = 'phalgoliaplaces';
         $this->tab = 'front_office_features';
-        $this->version = '0.3.0';
+        $this->version = '0.4.0';
         $this->author = 'PrestaHome';
         $this->need_instance = 0;
         $this->is_configurable = 0;

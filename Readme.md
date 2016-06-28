@@ -13,6 +13,9 @@ What is all about?
 
 ## Changelog
 
+#### Version 0.4.0 - Date: June 27, 2016
+* Support for counties/states (by state name at this moment)
+
 #### Version 0.3.0 - Date: June 27, 2016
 * Add options to set appID & apiKey for registered/premium Algolia users
 
@@ -25,7 +28,7 @@ What is all about?
 
 ## To Do:
 
-- [ ] Support for counties/states
+- [x] Support for counties/states
 - [ ] Error reporting if needed (?)
 - [ ] spec/tests
 - [ ] Auto-updater from @firstred

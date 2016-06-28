@@ -38,6 +38,13 @@ function runAlgoliaPlaces() {
         $.each(countries, function(index, country) {
           if (country.iso_code.toLowerCase() === e.suggestion.countryCode.toLowerCase()) {
             $('#id_country').val(country.id_country).trigger('change');
+            if (country.contains_states == 1 && country.states.length > 0) {
+              $.each(country.states, function(key, state) {
+                if (state.name == e.suggestion.administrative) {
+                  $('#id_state').val(state.id_state).trigger('change');
+                }
+              });
+            }
           }
         });
       }
